@@ -3,9 +3,12 @@ import React from 'react';
 import Button from 'elements/Button';
 import BrandIcon from 'parts/IconText';
 
+import { useLocation } from 'react-router-dom';
+
 export default function Header(props) {
+  const location = useLocation();
   const getNavLinkClass = (path) => {
-    return window.location.pathname === path ? '' : 'active';
+    return location.pathname === path ? '' : 'active';
   };
 
   return (
