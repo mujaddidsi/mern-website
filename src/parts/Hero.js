@@ -1,12 +1,8 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 import ImageHero from 'assets/images/img-hero.jpg';
 import ImageHero_ from 'assets/images/img-hero-frame.jpg';
-import IconCities from 'assets/images/icons/icon_cities.svg';
-import IconTraveler from 'assets/images/icons/icon-traveler.svg';
-import IconTreasure from 'assets/images/icons/icon_treasure.svg';
-
-import Fade from 'react-reveal/Fade';
 
 import Button from 'elements/Button';
 
@@ -34,19 +30,19 @@ export default function Hero(props) {
             </Button>
             <div className="row" style={{ marginTop: 80 }}>
               <div className="col-auto" style={{ marginRight: 35 }}>
-                <img width="36" height="36" src={IconTraveler} alt={`${props.data.travelers} Travelers`} />
+                <img width="36" height="36" src="/images/icon-traveler.svg" alt={`${props.data.travelers} Travelers`} />
                 <h6 className="mt-3">
                   {formatNumber(props.data.travelers)} <span className="text-gray-500 font-weight-light">travelers</span>
                 </h6>
               </div>
               <div className="col-auto" style={{ marginRight: 35 }}>
-                <img width="36" height="36" src={IconTreasure} alt={`${props.data.treasures} Treasures`} />
+                <img width="36" height="36" src="/images/icon-treasure.svg" alt={`${props.data.treasures} Treasures`} />
                 <h6 className="mt-3">
                   {formatNumber(props.data.treasures)} <span className="text-gray-500 font-weight-light">treasures</span>
                 </h6>
               </div>
               <div className="col-auto">
-                <img width="36" height="36" src={IconCities} alt={`${props.data.cities} Cities`} />
+                <img width="36" height="36" src="/images/icon-cities.svg" alt={`${props.data.cities} Cities`} />
                 <h6 className="mt-3">
                   {formatNumber(props.data.cities)} <span className="text-gray-500 font-weight-light">cities</span>
                 </h6>

@@ -25,11 +25,11 @@ export default function Categories({ data }) {
                             Pupular <span className="font-weight-light">Choice</span>
                           </div>
                         )}
-                        <figure className="image-wrapper" style={{ height: 180 }}>
+                        <figure className="img-wrapper" style={{ height: 180 }}>
                           <img src={item.imageUrl} alt={item.name} className="img-cover" />
                         </figure>
                         <div className="meta-wrapper">
-                          <Button type="link" href={`/properties/${item._id}`} className="streched-link d-block text-grey-800">
+                          <Button type="link" href={`/properties/${item._id}`} className="stretched-link d-block text-grey-800">
                             <h5 className="h4">{item.name}</h5>
                           </Button>
                           <span className="text-gray-500">
